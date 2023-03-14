@@ -217,6 +217,54 @@ const experience = [
       "Microservices",
     ],
   },
+  {
+    position: "Software Engineer",
+    jobType: "Full Time",
+    timeline: "July 2015 — January 2017",
+    companyName: "Maven Solutions",
+    link: "https://www.mavensolutions.net/",
+    description: "",
+    languages: [
+      "JavaScript",
+      "PHP",
+      "Python",
+      "Nodejs",
+      "AngularJs",
+      "Html5",
+      "CSS3",
+      "jQuery",
+      "Ionic Framework",
+      "Frappe",
+      "ERPNext",
+      "vTiger",
+      "Django",
+      "DRF",
+    ],
+  },
+  {
+    position: "Internee",
+    jobType: "Full Time",
+    timeline: "March 2014 — January 2015",
+    companyName: "Super Technologies",
+    link: "https://www.supertec.com/",
+    description: "",
+    languages: [
+      "JavaScript",
+      "PHP",
+      "Python",
+      "Nodejs",
+      "AngularJs",
+      "Html5",
+      "CSS3",
+      "jQuery",
+      "Ionic Framework",
+      "Frappe",
+      "ERPNext",
+      "vTiger",
+      "Django",
+      "DRF",
+    ],
+  },
 ];
 
 const purpl = [
@@ -868,7 +916,7 @@ export default function Main() {
                         <a
                           href={
                             contact.img === "gmail"
-                              ? "mailto:shfazeel400@gmail.com"
+                              ? "mailto:smshahroz.allauddin@gmail.com"
                               : contact.link
                           }
                           target={contact.img !== "gmail" ? "_blank" : "_self"}
