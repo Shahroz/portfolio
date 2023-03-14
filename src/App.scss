@@ -1,0 +1,394 @@
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+body,
+* {
+    font-family: "Quicksand", sans-serif !important;
+    user-select: none;
+    color: #001c3d;
+    // font-family: "Nunito", sans-serif !important;
+    // color: #343a40;
+    // color: #172b4d;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+$theme-color: #001c3d;
+// $theme-color : #673ab7;
+// $theme-color: #172b4d;
+
+.font-weight {
+    font-weight: 600 !important;
+}
+
+.theme-color {
+    color: $theme-color !important;
+}
+
+.heading {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.d-content {
+    display: contents;
+}
+
+.up-arrow > path {
+    color: #fff;
+}
+
+.sub-heading {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 7px 0px 20px 0px;
+}
+
+.app-bar {
+    background-color: #ffffff !important;
+}
+
+.MuiFab-primary {
+    background-color: $theme-color !important;
+}
+
+.nav-link {
+    color: $theme-color !important;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.corners {
+    position: relative;
+    padding: 6px 12px;
+    margin-right: 15px;
+}
+
+.corners:nth-last-child(1) {
+    margin-right: 0;
+}
+
+.introduction {
+    background: linear-gradient(#123, #111);
+    .heading {
+        color: #fff;
+    }
+    .name {
+        font-size: 100px;
+        font-weight: 600;
+        color: #fff;
+    }
+    .about {
+        padding-right: 40px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: justify;
+    }
+}
+
+.education {
+    .edu {
+        padding: 5px 0px;
+        line-height: 1.5;
+        font-weight: 600;
+        .main {
+            font-size: 25px;
+        }
+        .edu-detail {
+            font-size: 17px;
+        }
+    }
+}
+
+.skills {
+    img {
+        width: 80px;
+        height: 80px;
+    }
+    figure.item {
+        vertical-align: top;
+        display: inline-block;
+        text-align: center;
+        width: 80px;
+    }
+    .caption {
+        margin-top: 4px;
+        display: block;
+        font-size: 15px;
+        font-weight: 700;
+    }
+}
+
+.experience {
+    .company {
+        padding: 5px 0px;
+        line-height: 1.5;
+        font-weight: 600;
+        .name {
+            font-size: 25px;
+        }
+        .detail {
+            font-size: 17px;
+        }
+    }
+}
+
+.timeline {
+    padding: 10px 0px !important;
+    .MuiTimelineDot-root {
+        padding: 2px;
+        margin-top: 5px;
+    }
+    .MuiSvgIcon-root > path {
+        color: $theme-color;
+    }
+    .MuiTimelineDot-defaultGrey {
+        background-color: #c3c3c360;
+        border-color: $theme-color;
+    }
+    .MuiTimelineConnector-root {
+        background-color: $theme-color;
+    }
+    .timeperiod {
+        margin-top: 11px;
+    }
+    .MuiTimelineItem-missingOppositeContent:before {
+        flex: 0;
+        padding: 0;
+    }
+}
+
+.contact {
+    .contact-left-pane {
+        border-radius: 4px;
+        overflow: hidden;
+        height: 490px;
+        background-color: darkslategray;
+        img {
+            width: 100%;
+            object-fit: cover;
+            mix-blend-mode: color-burn;
+        }
+    }
+    .contact-right-pane > .MuiPaper-root {
+        height: 490px;
+        .contact-img {
+            margin: auto;
+            border-radius: 9px;
+            height: 65.61px !important;
+        }
+        figure.item {
+            vertical-align: top;
+            display: inline-block;
+            text-align: center;
+        }
+        .caption {
+            margin-top: 4px;
+            display: block;
+            font-size: 15px;
+            font-weight: 700;
+        }
+    }
+}
+
+.Typewriter {
+    border-radius: 0.5rem;
+    padding: 8px 24px;
+    font-size: 26px;
+    font-weight: 600;
+    background-color: #fff;
+    .Typewriter__wrapper,
+    .Typewriter__cursor {
+        color: $theme-color !important;
+    }
+}
+
+.button-class {
+    // Using inset box-shadow instead of border for sizing simplicity
+    // box-shadow: inset 0 0 0 2px $red;
+    // color: $red;
+    // Required, since we're setting absolute on pseudo-elements
+    border: 0;
+    position: relative;
+    vertical-align: middle;
+    &::before,
+    &::after {
+        box-sizing: inherit;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.center-border {
+    // &:hover {
+    //     color: $theme-color;
+    // }
+
+    // Set up base styles, we're going to scale instead of animating width/height
+    &::before,
+    &::after {
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        transform-origin: center; // Ensure scaling is done from the center (expands outwards)
+    }
+
+    // scale3d(<scale-horizontal>, <scale-vertical>, <scale-depth>);
+    &::before {
+        border-top: 2px solid $theme-color;
+        border-bottom: 2px solid $theme-color;
+        transform: scale3d(0, 1, 1); // Shrink only width
+    }
+
+    &::after {
+        border-left: 2px solid $theme-color;
+        border-right: 2px solid $theme-color;
+        transform: scale3d(1, 0, 1); // Shrink only height
+    }
+
+    &:hover::before,
+    &:hover::after {
+        transform: scale3d(1, 1, 1); // Show full-size
+        transition: transform 0.7s;
+    }
+}
+
+section {
+    padding: 10px 24px;
+}
+
+.rubber-band-animation {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    display: inline-block;
+}
+
+.rubber-band-animation:hover,
+.rubber-band-animation:focus,
+.animate-text {
+    color: $theme-color;
+    animation: rubberBand 1s infinite;
+    animation-name: rubberBand;
+}
+
+@keyframes rubberBand {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.chips-bg-color {
+    background: #001c3d;
+}
+
+.chips-text-color {
+    color: #ffffff;
+}
+
+.image-gallery-svg > polyline,
+.image-gallery-svg > path {
+    color: #fff;
+}
+
+@media (min-width: 1280px) {
+    .MuiContainer-maxWidthLg {
+        max-width: fit-content !important;
+    }
+}
+
+@media (min-width: 600px) {
+    .contact-right-pane {
+        .top-margin {
+            margin-top: 150px;
+        }
+    }
+    .MuiContainer-root {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .MuiToolbar-regular {
+        min-height: 55px !important;
+    }
+}
+
+.experience .MuiPaper-root.MuiPaper-rounded:hover,
+// .contact-link:hover,
+.border-shadow:hover {
+    box-shadow: 0px 1px 3px 4px #001c3d40 !important;
+}
+
+.image-gallery-left-nav .image-gallery-svg,
+.image-gallery-right-nav .image-gallery-svg {
+    width: 50px;
+    height: 50px;
+}
+
+@media only screen and (max-width: 640px) {
+    section {
+        padding: 10px 15px;
+    }
+    .MuiContainer-root {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .introduction {
+        padding-top: 15px;
+        .name {
+            font-size: 50px;
+            padding-bottom: 11px;
+        }
+        .about {
+            padding-right: 0px;
+            font-size: 22px !important;
+            padding-bottom: 10px;
+        }
+    }
+    .MuiTimelineContent-root {
+        padding: 6px 6px 6px 10px !important;
+    }
+    .MuiTypography-h5 {
+        font-size: 1.2rem !important;
+    }
+    .contact-left-pane {
+        margin-bottom: 12px;
+    }
+    .contact-right-pane > .MuiPaper-root {
+        height: auto !important;
+    }
+}
+
+.image-gallery {
+    // border: 1px solid gainsboro;
+}

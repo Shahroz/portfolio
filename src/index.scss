@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$theme-color: #001c3d;
+
+body {
+  margin: 0;
+  // font-family: "Nunito", sans-serif !important;
+  font-family: "Quicksand", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: white !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d8d8d8;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:vertical:hover {
+  background-color: #a9a9a9;
+}
+
+.image-gallery-content.bottom .image-gallery-image {
+  border-radius: 5px;
+  height: 270px;
+  object-fit: cover;
+  object-position: left;
+}
+
+.fullscreen .image-gallery-image {
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center !important;
+}
+
+.image-gallery-thumbnail-image {
+  height: 50px;
+  object-fit: cover;
+  object-position: left;
+}
+
+.fullscreen .image-gallery-left-nav .image-gallery-svg,
+.fullscreen .image-gallery-right-nav .image-gallery-svg {
+  width: 50px;
+}
