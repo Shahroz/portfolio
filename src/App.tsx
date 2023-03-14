@@ -34,6 +34,7 @@ let topSkills = [
   { img: "typescript", caption: "TypeScript" },
   { img: "javascript", caption: "JavaScript" },
   { img: "php", caption: "PHP" },
+  { img: "laravel", caption: "Laravel" },
   { img: "nodejs", caption: "NodeJs" },
   { img: 'rxjs', 'caption': 'RxJs' },
   { img: "angular-material", caption: "Angular Material" },
