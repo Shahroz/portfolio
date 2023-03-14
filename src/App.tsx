@@ -59,6 +59,7 @@ let skills = [
 
 let cssFrameworks = [
   { img: "bootstrap", caption: "Bootstrap" },
+  { img: "angular-material", caption: "Angular Material Design" },
   { img: "tailwind", caption: "Tailwind UI" },
   { img: "mdb", caption: "MDB" },
 ];
