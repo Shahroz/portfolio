@@ -113,7 +113,7 @@ const headers = [
   { href: "about", name: "About" },
   { href: "skills", name: "Skills" },
   { href: "resume", name: "Resume" },
-  { href: "projects", name: "Projects" },
+  /*{ href: "projects", name: "Projects" },*/
   { href: "contact", name: "Contact" },
 ];
 
