@@ -901,7 +901,7 @@ export default function Main() {
             </div>
             <div className="grid md:gap-4 sm:text-center sm:grid-cols-1 md:grid-cols-12">
               <div className="sm:col-span-12 md:col-span-4 contact-left-pane relative">
-                <div className="text-xl font-bold text-white absolute top-1/3 sm:px-6 sm:py-2 md:px-20 py-4 text-justify">
+                <div className="text-xl font-bold text-white absolute top-1/3 sm:px-6 sm:py-2 md:px-20 py-4 text-start">
                   I'm currently taking on freelance work. If you are interested
                   in hiring me for your project please use one of these options
                   to get in touch
