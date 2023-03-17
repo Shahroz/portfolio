@@ -71,11 +71,10 @@ let versionControlSystem = [
   { img: "github", caption: "GitHub" },
   { img: "gitlab", caption: "GitLab" },
   { img: "bitbucket", caption: "Bitbucket" },
-  { img: "heroku", caption: "Heroku" },
   { img: "yarn", caption: "Yarn" },
+  { img: "vercel", caption: "Vercel" },
+  { img: "vite", caption: "Vite" },
   { img: "webpack", caption: "Webpack" },
-  // { 'img': 'vscode', 'caption': 'VS Code' },
-  // { 'img': 'intellij', 'caption': 'IntelliJ' },
 ];
 
 let contacts = [
@@ -729,7 +728,7 @@ export default function Main() {
                                 <span>
                                   at{" "}
                                   <a
-                                    className="underline"
+                                    className="underline pl-1"
                                     target="_blank"
                                     rel="noreferrer"
                                     href={exp.link}
