@@ -90,6 +90,10 @@ let contacts = [
 
 let education = [
   {
+    degree: "M101JS: MongoDB for Node.js Developers",
+    from: "MongoDB University",
+    year: "2016 — 2016",
+  }, {
     degree: "Bachelors of Computer Science",
     from: "Federal Urdu University, Karachi",
     year: "2011 — 2015",
