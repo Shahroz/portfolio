@@ -593,13 +593,13 @@ export default function Main() {
                   <div className="md:hidden name sm:text-justify">
                     Shahroz Allauddin
                   </div>
-                  <div>
+                  {/*<div>
                     <img
                       className="rounded-lg object-cover object-center m-auto sm:w-full lg:w-full md:h-96 lg:object-top"
                       src={require("./assets/img/profile3.jpg").default}
                       alt="profile"
                     />
-                  </div>
+                  </div>*/}
                   <div className="text-center mt-7 rounded-xl">
                     <Typewriter
                       options={{
