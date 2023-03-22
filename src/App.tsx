@@ -837,7 +837,7 @@ export default function Main() {
 
           <hr />
 
-          <section id="projects" className="projects invisible">
+          <section id="projects" className="projects hidden">
             <div className="heading pb-4">
               <div className="rubber-band-animation">R</div>
               <div className="rubber-band-animation">e</div>
@@ -855,7 +855,7 @@ export default function Main() {
               <div className="rubber-band-animation">s</div>
             </div>
 
-            <div className="grid sm:grid-cols-1 md:grid-cols-12 mb-10 invisible">
+            <div className="grid sm:grid-cols-1 md:grid-cols-12 mb-10 hidden">
               {imageGallery.map((gallery: any, index: any) => (
                 <div
                   key={gallery.name + index}
