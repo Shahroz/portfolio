@@ -58,10 +58,30 @@ let skills = [
   { img: 'open-cart', 'caption': 'Opencart' },
 ];
 
+let aiSkills = [
+  { img: "python", caption: "Python" },
+  { img: "rust", caption: "Rust" },
+  { img: "openai", caption: "OpenAI" },
+  { img: "langchain", caption: "LangChain" },
+  { img: "gemini", caption: "Google Gemini" },
+];
+
+let cloudSkills = [
+  { img: "google-cloud-storage", caption: "Google Cloud Storage" },
+  { img: "google-cloud-run", caption: "Google Cloud Run" },
+  { img: "aws-s3", caption: "AWS S3" },
+  { img: "aws-lambda", caption: "AWS Lambda" },
+  { img: "aws-ec2", caption: "AWS EC2" },
+  { img: "aws-cloudformation", caption: "AWS CloudFormation" },
+  { img: "aws-control-tower", caption: "AWS Control Tower" },
+  { img: "nano-banana", caption: "Nano Banana" },
+];
+
 let cssFrameworks = [
+  { img: "shadcn", caption: "shadcn/ui" },
+  { img: "tailwind", caption: "Tailwind UI" },
   { img: "bootstrap", caption: "Bootstrap" },
   { img: "angular-material", caption: "Angular Material Design" },
-  { img: "tailwind", caption: "Tailwind UI" },
   { img: "mdb", caption: "MDB" },
 ];
 
@@ -119,13 +139,48 @@ const headers = [
 
 const experience = [
   {
-    position: "Front End Supervisor",
+    position: "Senior Software Developer Manager",
     jobType: "Full Time",
-    timeline: "August 2020 — Present",
+    timeline: "July 2023 — Present",
+    companyName: "Gridizen",
+    link: "https://www.gridizen.com",
+    description:
+      "Take full ownership of AI based applications with E2E testing. Manage, mentor, and motivate a team of developers, fostering a culture of innovation, collaboration, and continuous improvement. Define team goals, set clear expectations, and monitor performance to ensure alignment with organizational objectives. Provide regular feedback, conduct performance reviews, and identify opportunities for team members' growth and development. Take full ownership of the end-to-end delivery of development projects, ensuring they are completed on time, within budget, and to the highest quality standards. Work closely with product managers, designers, QA engineers, and other stakeholders to ensure seamless collaboration and alignment. Identify opportunities to improve development processes, tools, and workflows. Monitor team metrics and performance indicators, using data to inform decisions and drive improvements. Effectively manage tasks and assignments using ClickUp, streamlining project workflows and enhancing team collaboration and productivity. Facilitate and manage daily Scrum meetings efficiently, ensuring clear communication, addressing team concerns, and keeping projects on track with well-defined goals and priorities. Oversee repository management, conduct code reviews, and manage release processes to ensure high-quality code, consistent version control, and smooth deployment cycles.",
+    languages: [
+      "AI/ML",
+      "Agentic AI",
+      "E2E Testing",
+      "Team Leadership",
+      "Python",
+      "Rust",
+      "JavaScript",
+      "TypeScript",
+      "Angular",
+      "React",
+      "Node.js",
+      "Google Gemini",
+      "Google Cloud Storage",
+      "Google Cloud Run",
+      "AWS S3",
+      "AWS Lambda",
+      "AWS EC2",
+      "AWS CloudFormation",
+      "AWS Control Tower",
+      "Nano Banana",
+      "ClickUp",
+      "Scrum",
+      "Code Review",
+      "Repository Management",
+    ],
+  },
+  {
+    position: "Technical Team Lead",
+    jobType: "Full Time",
+    timeline: "July 2020 — May 2023",
     companyName: "IdeaToLife",
     link: "https://www.ideatolife.me",
     description:
-      "Working as a Front End Supervisor and my responsibilities and duties include team leading, take leads on complex task and projects, ongoing design, development, and maintenance of the system. Enhancing the look, functionality, and appearance of the application. Implementing new features to the system.",
+      "Leader, Scrum master and attends business meetings. Responsibility to manage Angular projects and Front End, teams. Take project ownership and lead front-end teams. Write complex logic including services, and socket integrations, and manage Amazon S3 bucket operations with large files. Collaborate with business and designer teams and transform them into features. Write RESTfull services using Nest.Js, and integrate them into Angular applications. Responsible to manage setup and configurations SEO in Angular SSR, Lazy load modules, Code review, and splitting. Team leadership and mentor reports and help them in Skills Development. Built E-Commerce web application in Angular. Built Custom CRM, ERP, Admin Panels and CMS in Angular with RESTfull Service integration. Worked on WebGL library fabric.js and Data Visualization tools like D3, Leaflet Map, Heatmap, etc.",
     languages: [
       "Angular",
       "Angular Material",
@@ -139,6 +194,18 @@ const experience = [
       "Gatsby",
       "Apex Charts",
       "SEO",
+      "NestJS",
+      "RESTful Services",
+      "Amazon S3",
+      "Socket.io",
+      "WebGL",
+      "Fabric.js",
+      "D3.js",
+      "Leaflet Map",
+      "Heatmap",
+      "Team Leadership",
+      "Scrum",
+      "Code Review",
     ],
   },
   {
@@ -564,16 +631,12 @@ export default function Main() {
               <div className="col-span-3 sm:mt-2 md:mt-14 relative">
                 <div className="grid grid-cols-1">
                   <Fade left>
-                    <div className="heading sm:hidden">Its</div>
+                    <div className="heading sm:hidden">Hi, I'm</div>
                     <div className="name sm:hidden sm:text-left">
                       Shahroz Allauddin
                     </div>
                     <div className="about sm:mb-3 mt-3">
-                      A passionate and determined person who is always willing
-                      to learn new technologies and improve skills. I want to
-                      work in an environment where I’m given a chance to prove
-                      my creative capabilities and to help the organization in
-                      achieving its goals through hard work and dedication.
+                      A Senior Software Developer Manager with over 9+ years of experience in JavaScript, Node.js, Rust, and PHP frameworks. Currently leading AI-based applications with E2E testing at Gridizen. Passionate about team leadership, mentoring developers, and building innovative solutions using cutting-edge technologies including AI/ML, Angular, React, and modern development practices. Proven track record of delivering 30+ web applications from scratch and enhancing team productivity by 30% through streamlined processes and mentorship.
                     </div>
                   </Fade>
 
@@ -604,8 +667,10 @@ export default function Main() {
                     <Typewriter
                       options={{
                         strings: [
-                          "Web Developer",
-                          "Freelancer",
+                          "Senior Software Developer Manager",
+                          "AI/ML Engineer",
+                          "Team Leader",
+                          "Full Stack Developer",
                           "Tech Enthusiast",
                         ],
                         autoStart: true,
@@ -657,6 +722,42 @@ export default function Main() {
                     />
                     <figcaption className="caption">
                       {iSkills.caption}
+                    </figcaption>
+                  </figure>
+                </div>
+              ))}
+            </div>
+            <div className="sub-heading">AI & Machine Learning</div>
+            <div className="grid sm:grid-cols-3 md:grid-cols-9 lg:grid-cols-9 sm:text-center">
+              {aiSkills.map((aiSkill: any, index: any) => (
+                <div className="col-span-1 sm:mb-5" key={aiSkill.img + index}>
+                  <figure className="item">
+                    <img
+                      src={
+                        require(`./assets/languages/${aiSkill.img}.png`).default
+                      }
+                      alt={aiSkill.img}
+                    />
+                    <figcaption className="caption">
+                      {aiSkill.caption}
+                    </figcaption>
+                  </figure>
+                </div>
+              ))}
+            </div>
+            <div className="sub-heading">Cloud & Infrastructure</div>
+            <div className="grid sm:grid-cols-3 md:grid-cols-9 lg:grid-cols-9 sm:text-center">
+              {cloudSkills.map((cloudSkill: any, index: any) => (
+                <div className="col-span-1 sm:mb-5" key={cloudSkill.img + index}>
+                  <figure className="item">
+                    <img
+                      src={
+                        require(`./assets/languages/${cloudSkill.img}.png`).default
+                      }
+                      alt={cloudSkill.img}
+                    />
+                    <figcaption className="caption">
+                      {cloudSkill.caption}
                     </figcaption>
                   </figure>
                 </div>
