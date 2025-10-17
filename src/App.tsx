@@ -3,7 +3,7 @@ import { CssBaseline, CircularProgress, Box } from '@mui/material';
 import { Analytics } from "@vercel/analytics/react";
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
-import './App.scss';
+import './App.css';
 import ScrollToTop from './components/common/ScrollToTop';
 
 // Lazy load components for code splitting

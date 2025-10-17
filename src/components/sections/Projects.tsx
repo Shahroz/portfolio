@@ -3,6 +3,7 @@ import { Container, Typography, Box, CircularProgress } from '@mui/material';
 import { Paper } from '@mui/material';
 import { motion } from 'framer-motion';
 import { PROJECTS } from '../../constants';
+import 'react-image-gallery/styles/css/image-gallery.css';
 
 // Lazy load ImageGallery to reduce initial bundle size
 const ImageGallery = lazy(() => import('react-image-gallery'));

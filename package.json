@@ -2,6 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "engines": {
     "node": "^20"
   },
@@ -42,6 +43,7 @@
     "test": "vitest"
   },
   "devDependencies": {
+    "@tailwindcss/vite": "^4.1.14",
     "@types/jquery": "^3.5.5",
     "@vitejs/plugin-react": "^5.0.4",
     "autoprefixer": "^10.4.20",
