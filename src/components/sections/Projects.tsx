@@ -1,9 +1,11 @@
-import React from 'react';
-import { Container, Typography, Box } from '@mui/material';
+import React, { Suspense, lazy } from 'react';
+import { Container, Typography, Box, CircularProgress } from '@mui/material';
 import { Paper } from '@mui/material';
-import ImageGallery from 'react-image-gallery';
 import { motion } from 'framer-motion';
 import { PROJECTS } from '../../constants';
+
+// Lazy load ImageGallery to reduce initial bundle size
+const ImageGallery = lazy(() => import('react-image-gallery'));
 
 const Projects: React.FC = () => {
   const imageGallery = PROJECTS.map((project, index) => ({
@@ -54,13 +56,15 @@ const Projects: React.FC = () => {
 
                   {gallery.images.length > 0 && (
                     <Box className="project-gallery">
-                      <ImageGallery
-                        items={gallery.images}
-                        showThumbnails={true}
-                        showFullscreenButton={true}
-                        showPlayButton={false}
-                        lazyLoad={true}
-                      />
+                      <Suspense fallback={<CircularProgress />}>
+                        <ImageGallery
+                          items={gallery.images}
+                          showThumbnails={true}
+                          showFullscreenButton={true}
+                          showPlayButton={false}
+                          lazyLoad={true}
+                        />
+                      </Suspense>
                     </Box>
                   )}
 

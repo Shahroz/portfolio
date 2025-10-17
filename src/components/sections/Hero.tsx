@@ -1,7 +1,9 @@
-import React from 'react';
-import { Container, Typography, Box } from '@mui/material';
-import Typewriter from 'typewriter-effect';
+import React, { Suspense, lazy } from 'react';
+import { Container, Typography, Box, CircularProgress } from '@mui/material';
 import { motion } from 'framer-motion';
+
+// Lazy load Typewriter to reduce initial bundle size
+const Typewriter = lazy(() => import('typewriter-effect'));
 
 const Hero: React.FC = () => {
   return (
@@ -24,21 +26,23 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <Typography variant="h4" component="h2" className="hero-subtitle">
-              <Typewriter
-                options={{
-                  strings: [
-                    'Full Stack Developer',
-                    'AI Enthusiast',
-                    'Cloud Solutions Architect',
-                    'Mobile App Developer',
-                    'Tech Lead'
-                  ],
-                  autoStart: true,
-                  loop: true,
-                  delay: 50,
-                  deleteSpeed: 30,
-                }}
-              />
+              <Suspense fallback={<span>Full Stack Developer</span>}>
+                <Typewriter
+                  options={{
+                    strings: [
+                      'Full Stack Developer',
+                      'AI Enthusiast',
+                      'Cloud Solutions Architect',
+                      'Mobile App Developer',
+                      'Tech Lead'
+                    ],
+                    autoStart: true,
+                    loop: true,
+                    delay: 50,
+                    deleteSpeed: 30,
+                  }}
+                />
+              </Suspense>
             </Typography>
           </motion.div>
 
