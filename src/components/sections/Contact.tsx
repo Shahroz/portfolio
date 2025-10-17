@@ -19,6 +19,7 @@ const Contact: React.FC = () => {
               <img
                 src="/src/assets/texture/texture1.jpg"
                 alt="texture"
+                loading="lazy"
                 style={{ height: "-webkit-fill-available" }}
               />
             </motion.div>
@@ -67,6 +68,7 @@ const Contact: React.FC = () => {
                           <img
                             src={`/src/assets/contact/${contact.img}.png`}
                             alt={contact.alt}
+                            loading="lazy"
                           />
                           <figcaption>{contact.alt}</figcaption>
                         </figure>
