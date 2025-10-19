@@ -41,6 +41,8 @@ export const skills = [
   { img: 'ionic', 'caption': 'Ionic' },
   { img: 'ngrx', 'caption': 'NgRx' },
   { img: 'open-cart', 'caption': 'Opencart' },
+  { img: "json-schema", caption: "JSON Schema" },
+  { img: "react-json", caption: "React JSON" },
 ];
 
 export const aiSkills = [
