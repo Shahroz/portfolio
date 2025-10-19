@@ -12,19 +12,20 @@
 .heading {
   flex-grow: 1;
   font-weight: bold;
-  color: white;
+  color: white !important;
 }
 
 .logo {
   display: flex;
   align-items: center;
   gap: 2px;
+  color: white !important;
 }
 
 .rubber-band-animation {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #fff;
+  color: white !important;
   animation: rubberBand 2s infinite;
 }
 

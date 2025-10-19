@@ -11,15 +11,7 @@ const Hero: React.FC = () => {
           <div className="md:hidden name sm:text-justify">
             Shahroz Allauddin
           </div>
-          {/*<div>
-            <Image
-              className="rounded-lg object-cover object-center m-auto sm:w-full lg:w-full md:h-96 lg:object-top"
-              src="img/profile3.jpg"
-              alt="profile"
-              loading="eager"
-            />
-          </div>*/}
-          <div className="text-center mt-7 rounded-xl">
+          <div className="text-center mt-3 rounded-xl">
             <Typewriter
               options={{
                 strings: typewriterStrings,
@@ -30,7 +22,7 @@ const Hero: React.FC = () => {
               }}
             />
           </div>
-          <div className="text-center mt-4">
+          <div className="text-center mt-2">
             <p className="hero-description">
               I am a passionate Full Stack Developer with 8+ years of experience in web and mobile application development. 
               I specialize in creating robust, scalable, and user-friendly applications using modern technologies.

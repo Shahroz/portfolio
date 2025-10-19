@@ -1,11 +1,11 @@
 // Hero Section Styles
 .hero-section {
-  min-height: 100vh;
+  min-height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  padding: 2rem 1rem;
+  padding: 1rem;
   margin-top: 64px; // Account for fixed header
 }
 
@@ -19,7 +19,7 @@
   font-size: 2.5rem;
   font-weight: bold;
   color: white;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .hero-description {
@@ -35,7 +35,7 @@
   font-size: 2.5rem;
   font-weight: bold;
   color: white;
-  min-height: 3rem;
+  min-height: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,36 +44,44 @@
 // Responsive Design
 @media (max-width: 768px) {
   .hero-section {
-    padding: 1rem;
-    min-height: 80vh;
+    padding: 0.5rem;
+    min-height: 70vh;
   }
   
   .name {
     font-size: 2rem;
+    margin-bottom: 0.5rem;
   }
   
   .Typewriter {
     font-size: 1.8rem;
-    min-height: 2.5rem;
-  }
-  
-  .hero-description {
-    font-size: 1rem;
-    padding: 0 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .name {
-    font-size: 1.5rem;
-  }
-  
-  .Typewriter {
-    font-size: 1.4rem;
     min-height: 2rem;
   }
   
   .hero-description {
+    font-size: 1rem;
+    padding: 0 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    min-height: 60vh;
+    padding: 0.25rem;
+  }
+  
+  .name {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .Typewriter {
+    font-size: 1.4rem;
+    min-height: 1.5rem;
+  }
+  
+  .hero-description {
     font-size: 0.9rem;
+    padding: 0 0.25rem;
   }
 }
