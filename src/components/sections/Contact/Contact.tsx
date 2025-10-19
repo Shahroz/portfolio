@@ -36,10 +36,12 @@ const Contact: React.FC = () => {
               </div>
               <Image
                 className="responsive"
-                src="texture/texture3.jpg"
+                src="assets/texture/texture3.jpg"
                 alt="texture"
                 style={{ height: "-webkit-fill-available" }}
                 placeholder="Loading background..."
+                width={0}
+                height={0}
               />
             </div>
             <div className="sm:col-span-12 md:col-span-8 contact-right-pane">
@@ -61,9 +63,11 @@ const Contact: React.FC = () => {
                         <figure className="item">
                           <Image
                             className="contact-img"
-                            src={`contact/${contact.img}.png`}
+                            src={`assets/contact/${contact.img}.png`}
                             alt={contact.img}
                             placeholder={`Loading ${contact.caption}...`}
+                            width={100}
+                            height={100}
                           />
                           <figcaption className="caption text-center">
                             {contact.caption}

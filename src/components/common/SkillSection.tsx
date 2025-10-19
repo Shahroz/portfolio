@@ -6,14 +6,12 @@ interface SkillSectionProps {
   title: string;
   skills: Array<{ img: string; caption: string }>;
   animation?: "slide-left" | "slide-right" | "slide-up" | "slide-down" | "bounce" | "scale" | "fade";
-  folder?: string;
 }
 
 const SkillSection: React.FC<SkillSectionProps> = ({ 
   title, 
   skills, 
-  animation = "slide-left",
-  folder = "languages"
+  animation = "slide-left"
 }) => {
   return (
     <AnimationWrapper animation={animation} delay={0.3}>
@@ -24,7 +22,6 @@ const SkillSection: React.FC<SkillSectionProps> = ({
             key={`${skill.img}-${index}`}
             img={skill.img}
             caption={skill.caption}
-            folder={folder}
           />
         ))}
       </div>
