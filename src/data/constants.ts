@@ -228,7 +228,7 @@ export const experience = [
     description: "",
     languages: ["AngularJs", "Google AMP", "SEO", "HTML5", "Bootstrap", "CSS3", "JavaScript"],
   },
-  {
+  /*{
     position: "Freelancer",
     jobType: "Part Time",
     timeline: "2020 — Present",
@@ -256,7 +256,7 @@ export const experience = [
       "MySQL",
       "PostgreSQL",
     ],
-  },
+  },*/
   {
     position: "Full Stack Developer",
     jobType: "Full Time",
