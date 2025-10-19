@@ -43,6 +43,10 @@ export const skills = [
   { img: 'open-cart', 'caption': 'Opencart' },
   { img: "json-schema", caption: "JSON Schema" },
   { img: "react-json", caption: "React JSON" },
+  { img: "redux", caption: "Redux" },
+  { img: "tanstack-router", caption: "TanStack Router" },
+  { img: "tanstack-query", caption: "TanStack Query" },
+  { img: "react-flow", caption: "React Flow" },
 ];
 
 export const aiSkills = [
