@@ -330,86 +330,86 @@ export const experience = [
 // Project Gallery Data
 const purpl = [
   {
-    original: "https://i.ibb.co/SBJVCb7/1.jpg",
-    thumbnail: "https://i.ibb.co/SBJVCb7/1.jpg",
+    original: "assets/projects/purpl/1.jpg",
+    thumbnail: "assets/projects/purpl/1.jpg",
   },
   {
-    original: "https://i.ibb.co/JvMmk4x/2.jpg",
-    thumbnail: "https://i.ibb.co/JvMmk4x/2.jpg",
+    original: "assets/projects/purpl/2.jpg",
+    thumbnail: "assets/projects/purpl/2.jpg",
   },
   {
-    original: "https://i.ibb.co/31mzrLp/3.jpg",
-    thumbnail: "https://i.ibb.co/31mzrLp/3.jpg",
+    original: "assets/projects/purpl/3.jpg",
+    thumbnail: "assets/projects/purpl/3.jpg",
   },
   {
-    original: "https://i.ibb.co/Zdts9zy/4.jpg",
-    thumbnail: "https://i.ibb.co/Zdts9zy/4.jpg",
+    original: "assets/projects/purpl/4.jpg",
+    thumbnail: "assets/projects/purpl/4.jpg",
   },
   {
-    original: "https://i.ibb.co/Q8p3hsh/5.jpg",
-    thumbnail: "https://i.ibb.co/Q8p3hsh/5.jpg",
+    original: "assets/projects/purpl/5.jpg",
+    thumbnail: "assets/projects/purpl/5.jpg",
   },
   {
-    original: "https://i.ibb.co/Wvf1pvf/6.jpg",
-    thumbnail: "https://i.ibb.co/Wvf1pvf/6.jpg",
+    original: "assets/projects/purpl/6.jpg",
+    thumbnail: "assets/projects/purpl/6.jpg",
   },
 ];
 
 const fleetak = [
   {
-    original: "https://i.ibb.co/51Lnb61/1.jpg",
-    thumbnail: "https://i.ibb.co/51Lnb61/1.jpg",
+    original: "assets/projects/fleetak/1.jpg",
+    thumbnail: "assets/projects/fleetak/1.jpg",
   },
   {
-    original: "https://i.ibb.co/L9ZbJ3X/2.jpg",
-    thumbnail: "https://i.ibb.co/L9ZbJ3X/2.jpg",
+    original: "assets/projects/fleetak/2.jpg",
+    thumbnail: "assets/projects/fleetak/2.jpg",
   },
   {
-    original: "https://i.ibb.co/dtzdX9L/3.jpg",
-    thumbnail: "https://i.ibb.co/dtzdX9L/3.jpg",
+    original: "assets/projects/fleetak/3.jpg",
+    thumbnail: "assets/projects/fleetak/3.jpg",
   },
   {
-    original: "https://i.ibb.co/vYR9VVZ/4.jpg",
-    thumbnail: "https://i.ibb.co/vYR9VVZ/4.jpg",
+    original: "assets/projects/fleetak/4.jpg",
+    thumbnail: "assets/projects/fleetak/4.jpg",
   },
   {
-    original: "https://i.ibb.co/vqfzXFt/5.jpg",
-    thumbnail: "https://i.ibb.co/vqfzXFt/5.jpg",
+    original: "assets/projects/fleetak/5.jpg",
+    thumbnail: "assets/projects/fleetak/5.jpg",
   },
   {
-    original: "https://i.ibb.co/6wQWR9Y/6.jpg",
-    thumbnail: "https://i.ibb.co/6wQWR9Y/6.jpg",
+    original: "assets/projects/fleetak/6.jpg",
+    thumbnail: "assets/projects/fleetak/6.jpg",
   },
 ];
 
 const kulud = [
   {
-    original: "https://i.ibb.co/0c52jst/1.jpg",
-    thumbnail: "https://i.ibb.co/0c52jst/1.jpg",
+    original: "assets/projects/kulud/1.jpg",
+    thumbnail: "assets/projects/kulud/1.jpg",
   },
   {
-    original: "https://i.ibb.co/vj5VJWp/2.jpg",
-    thumbnail: "https://i.ibb.co/vj5VJWp/2.jpg",
+    original: "assets/projects/kulud/2.jpg",
+    thumbnail: "assets/projects/kulud/2.jpg",
   },
   {
-    original: "https://i.ibb.co/7jN3jtZ/3.png",
-    thumbnail: "https://i.ibb.co/7jN3jtZ/3.png",
+    original: "assets/projects/kulud/3.png",
+    thumbnail: "assets/projects/kulud/3.png",
   },
   {
-    original: "https://i.ibb.co/4T1SKB5/4.png",
-    thumbnail: "https://i.ibb.co/4T1SKB5/4.png",
+    original: "assets/projects/kulud/4.png",
+    thumbnail: "assets/projects/kulud/4.png",
   },
   {
-    original: "https://i.ibb.co/j60fwK2/5.png",
-    thumbnail: "https://i.ibb.co/j60fwK2/5.png",
+    original: "assets/projects/kulud/5.png",
+    thumbnail: "assets/projects/kulud/5.png",
   },
   {
-    original: "https://i.ibb.co/NtZmQzS/6.png",
-    thumbnail: "https://i.ibb.co/NtZmQzS/6.png",
+    original: "assets/projects/kulud/6.png",
+    thumbnail: "assets/projects/kulud/6.png",
   },
   {
-    original: "https://i.ibb.co/WsrmYXk/7.png",
-    thumbnail: "https://i.ibb.co/WsrmYXk/7.png",
+    original: "assets/projects/kulud/7.png",
+    thumbnail: "assets/projects/kulud/7.png",
   },
 ];
 
@@ -420,14 +420,14 @@ export const imageGallery = [
     description: "",
     project: [
       {
-        original: 'https://i.ibb.co/Ny2cdXw/screencapture-mnatelier-women-stylist-listing-2022-11-02-17-33-47-min.png',
-        thumbnail: 'https://i.ibb.co/Ny2cdXw/screencapture-mnatelier-women-stylist-listing-2022-11-02-17-33-47-min.png',
+        original: 'assets/projects/mn-atelier/stylist-listing.png',
+        thumbnail: 'assets/projects/mn-atelier/stylist-listing.png',
       }, {
-        original: 'https://i.ibb.co/RhzpyWD/screencapture-mnatelier-women-designer-profile-amal-al-raisi-1477-2022-11-02-17-31-45-min.png',
-        thumbnail: 'https://i.ibb.co/RhzpyWD/screencapture-mnatelier-women-designer-profile-amal-al-raisi-1477-2022-11-02-17-31-45-min.png',
+        original: 'assets/projects/mn-atelier/designer-profile.png',
+        thumbnail: 'assets/projects/mn-atelier/designer-profile.png',
       }, {
-        original: 'https://i.ibb.co/V3XJPzz/screencapture-mnatelier-women-product-details-ari-cupro-dress-1144-2022-11-02-17-36-44-min.png',
-        thumbnail: 'https://i.ibb.co/V3XJPzz/screencapture-mnatelier-women-product-details-ari-cupro-dress-1144-2022-11-02-17-36-44-min.png',
+        original: 'assets/projects/mn-atelier/product-details.png',
+        thumbnail: 'assets/projects/mn-atelier/product-details.png',
       }
     ]
   },
