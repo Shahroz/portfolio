@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-$theme-color: #001c3d;
+$theme-color: #fff;
 
 body {
   margin: 0;
@@ -10,7 +10,7 @@ body {
   font-family: "Quicksand", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: white !important;
+  background: #fff !important;
 }
 
 code {

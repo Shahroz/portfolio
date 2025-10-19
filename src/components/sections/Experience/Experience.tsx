@@ -25,8 +25,8 @@ const Experience: React.FC = () => {
               <TimelineItem key={index}>
                 <TimelineSeparator>
                   <TimelineConnector />
-                  <TimelineDot color="primary">
-                    <RadioButtonCheckedIcon />
+                  <TimelineDot color="primary" variant="default">
+                    <RadioButtonCheckedIcon color='inherit' htmlColor='white' />
                   </TimelineDot>
                   <TimelineConnector />
                 </TimelineSeparator>
@@ -73,7 +73,7 @@ const Experience: React.FC = () => {
                 <TimelineSeparator>
                   <TimelineConnector />
                   <TimelineDot color="secondary">
-                    <RadioButtonCheckedIcon />
+                    <RadioButtonCheckedIcon color='inherit' htmlColor='white' />
                   </TimelineDot>
                   <TimelineConnector />
                 </TimelineSeparator>

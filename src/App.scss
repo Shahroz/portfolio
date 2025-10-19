@@ -5,14 +5,14 @@ body,
 * {
   font-family: "Quicksand", sans-serif !important;
   user-select: none;
-  color: #001c3d;
+  color: #fff;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-$theme-color: #001c3d;
+$theme-color: #fff;
 
 // Utility Classes
 .font-weight {
@@ -33,7 +33,12 @@ $theme-color: #001c3d;
 }
 
 .up-arrow > path {
-  color: #fff;
+  color: #001c3d;
+}
+
+// Material-UI overrides
+.MuiFab-label {
+  color: #001c3d !important;
 }
 
 .sub-heading {

@@ -12,6 +12,9 @@ const useStyles = makeStyles((theme) => ({
     right: theme.spacing(2),
     zIndex: 1000,
   },
+  icon: {
+    color: 'white !important',
+  },
 }));
 
 interface Props {
@@ -48,7 +51,7 @@ const ScrollToTopButton: React.FC = () => {
   return (
     <ScrollToTop>
       <Fab color="primary" size="small" aria-label="scroll back to top">
-        <KeyboardArrowUpIcon />
+        <KeyboardArrowUpIcon color='inherit' htmlColor='white' />
       </Fab>
     </ScrollToTop>
   );

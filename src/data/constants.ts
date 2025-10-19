@@ -49,6 +49,7 @@ export const aiSkills = [
   { img: "openai", caption: "OpenAI" },
   { img: "langchain", caption: "LangChain" },
   { img: "gemini", caption: "Google Gemini" },
+  { img: "nano-banana", caption: "Nano Banana" },
 ];
 
 export const cloudSkills = [
@@ -59,7 +60,6 @@ export const cloudSkills = [
   { img: "aws-ec2", caption: "AWS EC2" },
   { img: "aws-cloudformation", caption: "AWS CloudFormation" },
   { img: "aws-control-tower", caption: "AWS Control Tower" },
-  { img: "nano-banana", caption: "Nano Banana" },
 ];
 
 export const cssFrameworks = [
@@ -68,6 +68,7 @@ export const cssFrameworks = [
   { img: "bootstrap", caption: "Bootstrap" },
   { img: "angular-material", caption: "Angular Material Design" },
   { img: "mdb", caption: "MDB" },
+  { img: "ant-design", caption: "Ant Design" },
 ];
 
 export const versionControlSystem = [
