@@ -59,3 +59,44 @@ code {
 .fullscreen .image-gallery-right-nav .image-gallery-svg {
   width: 50px;
 }
+
+// Image lazy loading styles
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-placeholder {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  border-radius: 4px;
+  color: #999;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.image-container img.loading {
+  opacity: 0;
+}
+
+.image-container img.loaded {
+  opacity: 1;
+}
+
+.image-error {
+  background-color: #f8f8f8;
+  color: #666;
+  font-size: 12px;
+  border: 1px dashed #ccc;
+  border-radius: 4px;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}

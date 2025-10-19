@@ -1,0 +1,155 @@
+// Skills Section Styles
+.skills-section {
+  padding: 4rem 0;
+  background-color: #f8f9fa;
+}
+
+.section-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #001c3d;
+}
+
+.rubber-band-animation {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #001c3d;
+  animation: rubberBand 2s infinite;
+}
+
+.rubber-band-animation:nth-child(1) { animation-delay: 0s; }
+.rubber-band-animation:nth-child(2) { animation-delay: 0.1s; }
+.rubber-band-animation:nth-child(3) { animation-delay: 0.2s; }
+.rubber-band-animation:nth-child(4) { animation-delay: 0.3s; }
+.rubber-band-animation:nth-child(5) { animation-delay: 0.4s; }
+.rubber-band-animation:nth-child(6) { animation-delay: 0.5s; }
+
+@keyframes rubberBand {
+  0% { transform: scale(1); }
+  30% { transform: scaleX(1.25) scaleY(0.75); }
+  40% { transform: scaleX(0.75) scaleY(1.25); }
+  50% { transform: scaleX(1.15) scaleY(0.85); }
+  65% { transform: scaleX(0.95) scaleY(1.05); }
+  75% { transform: scaleX(1.05) scaleY(0.95); }
+  100% { transform: scale(1); }
+}
+
+.sub-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #001c3d;
+  margin: 2rem 0 1rem 0;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.sm\\:grid-cols-3 {
+  @media (max-width: 640px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.md\\:grid-cols-9 {
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(9, 1fr);
+  }
+}
+
+.lg\\:grid-cols-9 {
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(9, 1fr);
+  }
+}
+
+.sm\\:text-center {
+  @media (max-width: 640px) {
+    text-align: center;
+  }
+}
+
+.col-span-1 {
+  grid-column: span 1;
+}
+
+.sm\\:mb-5 {
+  @media (max-width: 640px) {
+    margin-bottom: 1.25rem;
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.caption {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #001c3d;
+  text-align: center;
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .skills-section {
+    padding: 2rem 0;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .rubber-band-animation {
+    font-size: 2rem;
+  }
+  
+  .sub-heading {
+    font-size: 1.25rem;
+    margin: 1.5rem 0 1rem 0;
+  }
+  
+  .item {
+    padding: 0.75rem;
+  }
+  
+  .caption {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+  
+  .rubber-band-animation {
+    font-size: 1.5rem;
+  }
+  
+  .sub-heading {
+    font-size: 1rem;
+  }
+}

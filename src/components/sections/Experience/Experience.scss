@@ -1,0 +1,205 @@
+// Experience Section Styles
+.experience-section {
+  padding: 4rem 0;
+  background-color: white;
+}
+
+.section-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #001c3d;
+}
+
+.rubber-band-animation {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #001c3d;
+  animation: rubberBand 2s infinite;
+}
+
+.rubber-band-animation:nth-child(1) { animation-delay: 0s; }
+.rubber-band-animation:nth-child(2) { animation-delay: 0.1s; }
+.rubber-band-animation:nth-child(3) { animation-delay: 0.2s; }
+.rubber-band-animation:nth-child(4) { animation-delay: 0.3s; }
+.rubber-band-animation:nth-child(5) { animation-delay: 0.4s; }
+.rubber-band-animation:nth-child(6) { animation-delay: 0.5s; }
+
+@keyframes rubberBand {
+  0% { transform: scale(1); }
+  30% { transform: scaleX(1.25) scaleY(0.75); }
+  40% { transform: scaleX(0.75) scaleY(1.25); }
+  50% { transform: scaleX(1.15) scaleY(0.85); }
+  65% { transform: scaleX(0.95) scaleY(1.05); }
+  75% { transform: scaleX(1.05) scaleY(0.95); }
+  100% { transform: scale(1); }
+}
+
+.sub-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #001c3d;
+  margin: 2rem 0 1rem 0;
+  text-align: center;
+}
+
+.timeline-content {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 1rem 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.job-header {
+  margin-bottom: 1rem;
+}
+
+.position {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #001c3d;
+  margin: 0 0 0.5rem 0;
+}
+
+.job-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  
+  span {
+    font-size: 0.875rem;
+    color: #666;
+  }
+}
+
+.company {
+  font-weight: 500;
+  
+  a {
+    color: #1976d2;
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.timeline {
+  font-style: italic;
+}
+
+.job-type {
+  background-color: #e3f2fd;
+  color: #1976d2;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.description {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  background-color: #f5f5f5;
+  color: #001c3d;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border: 1px solid #e0e0e0;
+  transition: background-color 0.3s ease;
+  
+  &:hover {
+    background-color: #e3f2fd;
+    border-color: #1976d2;
+  }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .experience-section {
+    padding: 2rem 0;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .rubber-band-animation {
+    font-size: 2rem;
+  }
+  
+  .sub-heading {
+    font-size: 1.25rem;
+    margin: 1.5rem 0 1rem 0;
+  }
+  
+  .timeline-content {
+    padding: 1rem;
+    margin: 0.5rem 0;
+  }
+  
+  .position {
+    font-size: 1.1rem;
+  }
+  
+  .job-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .skills-tags {
+    gap: 0.25rem;
+  }
+  
+  .skill-tag {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+  
+  .rubber-band-animation {
+    font-size: 1.5rem;
+  }
+  
+  .sub-heading {
+    font-size: 1rem;
+  }
+  
+  .timeline-content {
+    padding: 0.75rem;
+  }
+  
+  .position {
+    font-size: 1rem;
+  }
+}

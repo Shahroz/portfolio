@@ -1,0 +1,120 @@
+// Header Styles
+.app-bar {
+  background-color: #001c3d !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.heading {
+  flex-grow: 1;
+  font-weight: bold;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.rubber-band-animation {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  animation: rubberBand 2s infinite;
+}
+
+.rubber-band-animation:nth-child(1) { animation-delay: 0s; }
+.rubber-band-animation:nth-child(2) { animation-delay: 0.1s; }
+.rubber-band-animation:nth-child(3) { animation-delay: 0.2s; }
+.rubber-band-animation:nth-child(4) { animation-delay: 0.3s; }
+.rubber-band-animation:nth-child(5) { animation-delay: 0.4s; }
+.rubber-band-animation:nth-child(6) { animation-delay: 0.5s; }
+.rubber-band-animation:nth-child(7) { animation-delay: 0.6s; }
+.rubber-band-animation:nth-child(8) { animation-delay: 0.7s; }
+.rubber-band-animation:nth-child(9) { animation-delay: 0.8s; }
+
+@keyframes rubberBand {
+  0% { transform: scale(1); }
+  30% { transform: scaleX(1.25) scaleY(0.75); }
+  40% { transform: scaleX(0.75) scaleY(1.25); }
+  50% { transform: scaleX(1.15) scaleY(0.85); }
+  65% { transform: scaleX(0.95) scaleY(1.05); }
+  75% { transform: scaleX(1.05) scaleY(0.95); }
+  100% { transform: scale(1); }
+}
+
+.menu {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.menu-item {
+  cursor: pointer;
+  
+  a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    
+    &:hover {
+      color: #4fc3f7;
+    }
+  }
+}
+
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.burger-line {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+// Mobile Styles
+@media (max-width: 768px) {
+  .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #001c3d;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+    
+    &.hidden {
+      transform: translateY(-100%);
+    }
+    
+    &:not(.hidden) {
+      transform: translateY(0);
+    }
+  }
+  
+  .burger-menu {
+    display: flex;
+  }
+  
+  .logo {
+    font-size: 1.2rem;
+  }
+  
+  .rubber-band-animation {
+    font-size: 1.2rem;
+  }
+}
