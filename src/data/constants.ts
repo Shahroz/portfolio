@@ -42,7 +42,7 @@ export const skills = [
   { img: 'ngrx', 'caption': 'NgRx' },
   { img: 'open-cart', 'caption': 'Opencart' },
   { img: "json-schema", caption: "JSON Schema" },
-  { img: "react-json", caption: "React JSON" },
+  { img: "react-json-schema", caption: "React JSON Schema" },
   { img: "redux", caption: "Redux" },
   { img: "tanstack-router", caption: "TanStack Router" },
   { img: "tanstack-query", caption: "TanStack Query" },
@@ -56,6 +56,7 @@ export const aiSkills = [
   { img: "langchain", caption: "LangChain" },
   { img: "gemini", caption: "Google Gemini" },
   { img: "nano-banana", caption: "Nano Banana" },
+  { img: "cursor-ai", caption: "Cursor AI" },
 ];
 
 export const cloudSkills = [
