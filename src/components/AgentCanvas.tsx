@@ -6,9 +6,9 @@ import { Bot, Database, Globe, MessageSquare, Sparkles, Workflow } from "lucide-
 // A lightweight, dependency-free "AI agent pipeline" visual:
 // glowing nodes connected by animated dashed edges (mimics React Flow).
 const nodes = [
-  { id: "trigger", label: "Lead Trigger", sub: "webhook · MLS", icon: Globe, x: 0, y: 18, accent: "cyan" },
+  { id: "trigger", label: "Lead Trigger", sub: "webhook · CRM", icon: Globe, x: 0, y: 18, accent: "cyan" },
   { id: "agent", label: "AI Agent", sub: "Claude · Gemini", icon: Bot, x: 34, y: 0, accent: "indigo" },
-  { id: "workflow", label: "GenNodes Flow", sub: "JSON schema", icon: Workflow, x: 34, y: 52, accent: "purple" },
+  { id: "workflow", label: "Workflow Engine", sub: "JSON schema", icon: Workflow, x: 34, y: 52, accent: "purple" },
   { id: "enrich", label: "Enrichment", sub: "250+ integrations", icon: Database, x: 68, y: 18, accent: "indigo" },
   { id: "output", label: "Outreach", sub: "email · WhatsApp", icon: MessageSquare, x: 100, y: 30, accent: "cyan" },
 ] as const;
