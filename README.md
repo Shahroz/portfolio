@@ -1,46 +1,27 @@
-# Getting Started with Create React App
+# Shahroz Allauddin — Portfolio v2
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Dark-mode, glassmorphic single-page portfolio built with Next.js 16 (App Router, Turbopack, static export), React 19, TypeScript, Tailwind CSS, and Framer Motion.
 
-## Available Scripts
+Requires Node.js 20.9+.
 
-In the project directory, you can run:
+## Quick start
 
-### `npm start`
+```bash
+npm install
+npm run dev      # http://localhost:3000
+npm run build    # static export → out/
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Contact form
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The contact form uses [Web3Forms](https://web3forms.com) (free, client-side). Get an access key and paste it into `siteConfig.web3formsAccessKey` in `src/data/portfolioData.ts`. Until then the form will show an error state; email/LinkedIn/phone links work regardless.
 
-### `npm test`
+## Editing content
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+All content lives in one typed file: `src/data/portfolioData.ts` — profile, metrics, experience, projects, tech stack, and nav links. No component changes needed for content updates.
 
-### `npm run build`
+Set your production domain in `siteConfig.url` (used by metadata, sitemap, robots, and JSON-LD).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Deploy
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Static export — deploy `out/` anywhere (Vercel, Netlify, Cloudflare Pages, S3). On Vercel, just import the repo; it auto-detects Next.js.
