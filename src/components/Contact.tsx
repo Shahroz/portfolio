@@ -37,7 +37,7 @@ export default function Contact() {
   return (
     <section id="contact" className="scroll-mt-28 py-24">
       <div className="mx-auto max-w-6xl px-6">
-        <p className="section-heading">05 · Contact</p>
+        <p className="section-heading">06 · Contact</p>
         <h2 className="section-title">Let&apos;s build something intelligent</h2>
 
         <div className="grid gap-10 lg:grid-cols-2">

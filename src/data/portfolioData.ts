@@ -45,6 +45,14 @@ export interface Project {
   featured?: boolean;
 }
 
+export interface Service {
+  id: string;
+  title: string;
+  icon: string; // lucide icon name (mapped in component)
+  description: string;
+  deliverables: string[];
+}
+
 export interface TechCategory {
   id: string;
   label: string;
@@ -322,6 +330,57 @@ export const projectCategories: ("All" | ProjectCategory)[] = [
   "Media",
 ];
 
+export const services: Service[] = [
+  {
+    id: "agentic-ai",
+    title: "Agentic AI Development",
+    icon: "BrainCircuit",
+    description:
+      "Multi-agent systems, LLM integrations (Claude, Gemini, GPT), and AI workflow automation — from proof-of-concept to production systems your team uses daily.",
+    deliverables: ["Multi-agent workflows & orchestration", "LLM integration & prompt engineering", "No-code AI workflow builders", "RAG pipelines"],
+  },
+  {
+    id: "saas-mvp",
+    title: "SaaS & MVP Development",
+    icon: "Rocket",
+    description:
+      "Full-stack product builds from zero to launch: React/Next.js or Angular frontends, Rust/Node.js backends, subscriptions, and deep third-party integrations.",
+    deliverables: ["MVP to production, end to end", "Payments & subscriptions (Stripe)", "REST APIs & microservices", "E2E test coverage (Playwright)"],
+  },
+  {
+    id: "consulting",
+    title: "AI Strategy & Technical Consulting",
+    icon: "Compass",
+    description:
+      "Fractional CTO and advisory for founders and teams: AI adoption roadmaps, architecture reviews, stack decisions, and build-vs-buy guidance.",
+    deliverables: ["AI adoption roadmap", "Architecture & code audits", "Fractional CTO engagements", "Hiring & team-shape advice"],
+  },
+  {
+    id: "cloud-devops",
+    title: "Cloud Migration & DevOps",
+    icon: "Cloud",
+    description:
+      "AWS/GCP infrastructure done right: zero-downtime migrations, CI/CD pipelines, and database upgrades that cut latency and infrastructure cost.",
+    deliverables: ["Zero-downtime cloud migrations", "AWS Control Tower & Aurora", "Jenkins / CI-CD pipelines", "Docker & environment setup"],
+  },
+  {
+    id: "modernization",
+    title: "Web App Modernization",
+    icon: "Layout",
+    description:
+      "Legacy revamps that pay for themselves: framework upgrades, SSR & SEO, performance tuning, and UI overhauls — proven 40% load-time reductions.",
+    deliverables: ["Angular / React upgrades", "SSR, SEO & Core Web Vitals", "Performance audits & fixes", "Design-system cleanup"],
+  },
+  {
+    id: "leadership",
+    title: "Team Leadership & Delivery",
+    icon: "Users",
+    description:
+      "Embedded tech lead for distributed teams: sprint management, code review culture, mentoring, and reliable end-to-end feature delivery.",
+    deliverables: ["Embedded tech-lead engagements", "Code review & release management", "Developer mentoring", "Delivery process setup (Agile/Scrum)"],
+  },
+];
+
 export const techStack: TechCategory[] = [
   {
     id: "ai",
@@ -383,6 +442,7 @@ export const navLinks = [
   { href: "#projects", label: "Projects" },
   { href: "#experience", label: "Experience" },
   { href: "#stack", label: "Stack" },
+  { href: "#services", label: "Services" },
   { href: "#contact", label: "Contact" },
 ];
 

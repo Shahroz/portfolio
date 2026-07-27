@@ -20,7 +20,7 @@ export default function Hero() {
               transition={{ duration: 0.5 }}
               className="mb-4 inline-flex items-center gap-2 rounded-full border border-neon-cyan/30 bg-neon-cyan/[0.06] px-4 py-1.5 font-mono text-xs text-neon-cyan"
             >
-              <MapPin className="h-3 w-3" /> {profile.location} · Available for remote work
+              <MapPin className="h-3 w-3" /> {profile.location} · Open to remote roles, freelance & consulting
             </motion.p>
 
             <motion.h1
