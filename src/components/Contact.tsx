@@ -77,7 +77,9 @@ export default function Contact() {
                 </span>
                 <div>
                   <p className="text-xs text-slate-500">LinkedIn</p>
-                  <p className="text-sm font-medium text-white">/in/shahroz-allauddin</p>
+                  <p className="text-sm font-medium text-white">
+                    {profile.linkedin.replace(/^https?:\/\/(www\.)?linkedin\.com/, "")}
+                  </p>
                 </div>
               </a>
               <a

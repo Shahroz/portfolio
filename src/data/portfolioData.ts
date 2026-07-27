@@ -59,7 +59,7 @@ export const profile: Profile = {
   location: "Karachi, Pakistan",
   email: "smshahroz.allauddin@gmail.com",
   phone: "+92-323-3361729",
-  linkedin: "https://linkedin.com/in/shahroz-allauddin",
+  linkedin: "https://www.linkedin.com/in/shahroz-allauddin-a268b57a",
   github: "https://github.com/Shahroz",
   summary:
     "Results-driven Senior Development Manager and Agentic AI Engineer with 11+ years of experience architecting and shipping full-stack web applications and cloud infrastructure at scale — including 3 years building AI-powered products and 2 years developing agentic, multi-agent SaaS systems. Proven track record leading cross-functional engineering teams, delivering 30+ projects from scratch, and integrating cutting-edge LLMs (Gemini, Claude, ChatGPT) into production-grade systems. Deep expertise spanning Rust backends, React/Angular frontends, AWS/GCP infrastructure, and real-time workflow automation.",
